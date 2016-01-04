@@ -1,0 +1,34 @@
+.reveal section img.img-simple {
+        border: none;
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        background: transparent;
+}
+
+.slide .wrong-answer {
+        position: absolute;
+        left: 50%;
+        top: 35%;
+        transform: rotate(-20deg);
+        margin-left: -11%;
+        font-size: 2em;
+        border: 10px solid red;
+        padding: 10px;
+        color: red;
+        font-weight: bold;
+        -webkit-box-shadow: -2px -2px 97px -23px rgba(0,0,0,0.46);
+        -moz-box-shadow: -2px -2px 97px -23px rgba(0,0,0,0.46);
+        box-shadow: -2px -2px 97px -23px rgba(0,0,0,0.46);
+        text-shadow: 0px 0px 16px rgba(150, 150, 150, 1);
+}
+
+.slide .git-logo > * {
+        vertical-align: middle;
+        font-family: 'Roboto Slab', 'Georgia', serif;
+        color: #C6C2C0;
+}
+
+.slide .git-logo > *:first-child {
+        margin-right: 24px;
+}
