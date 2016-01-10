@@ -3,22 +3,26 @@ _A talk about Git and why it's awesome_
 
 @@@
 
-# Why a talk about Git?
+## Why a talk about Git?
 
 Notes:
 
-### Preface
+_Before starting_:
 
-- Feel free to ignore [or better yet, correct] me if you already know what I'm
-  talking about
-- We all use Git every single day, it's a huge part of how we get things done,
-  and some people still just use three/four commands that they assume work a
-  certain way based on their behavior.
+I know that there's probably a wide range of Git aptitudes here, but I thought
+it would be useful to get some core Git knowledge out in the open.
 
 @@@
 
 We all use it **every** single day,
-<p class="fragment">And I feel like it's _hugely_ underutilized.</p>
+<p class="fragment"><i>And I feel like it could be leveraged much more than it is.</i></p>
+
+Notes:
+
+- Mentality that the VC software you use is secondary to the code you track with
+  it. (This is, of course, true)
+- Doesn't mean that we can't all up our Git game, and reap some pretty awesome
+  benefits.
 
 @@@
 
@@ -30,10 +34,12 @@ Notes:
 
 - When first starting in Vim, it's paralyzing. "I just wanna use the arrow
   keys and stay in insert mode!"
-- The more you learn about the API and vimscript, the more things you can do
-  with it (and hopefully be more productive as a result).
+- The more you learn, the more things you can do with it (and hopefully be more
+  productive as a result).
 - So too with Git. When you're stuck using basic commands and not peeking behind
   the curtains, it's like staying in Insert mode and using the arrow keys.
+- Like with source control, at first you have this idea that the tool is
+  secondary to what you're making with it.
 
 @@@
 
@@ -42,9 +48,9 @@ Notes:
 
 Notes:
 
-Bottom line: if you're extremely comfortable using Git to its full potential,
-we can be more flexible and resilient programmers in the face of change and
-complicated workflows/release cycles, etc.
+Bottom line: **if you're extremely comfortable using Git to its full potential,
+we can be more flexible and resilient programmers in the face of change (e.g.
+changes in release schedules, etc.).**
 
 @@@
 
@@ -56,14 +62,14 @@ therefore pretty frustrating.</p>
 Notes:
 
 - `git checkout` doesn't have a ton in common with `svn checkout`
-- "I think if we look at Git's internals a little bit, we can all be sure that
-  no one is making any incorrect assumptions about what Git is doing when we
-  use it. (As I did)"
-
+- If we look at Git's internals a little bit, we can all be sure that no one is
+  making any incorrect assumptions about what Git is doing when we use it. (As I
+  did)
 
 @@@
 
 ## Goals ##
 
 - Peek behind the curtains, and take a look at how Git persists information.
-- Armed with a correct model of Git, demo a couple of great things that Git does (from the CLI).
+- Armed with a correct model of Git, demo a couple of great things that Git does (via its CLI).
+
