@@ -1,5 +1,5 @@
-# Don't be a git.
-_A talk about Git and why it's awesome_
+# (Git Pun Here)
+_All about the amazing content tracker._
 
 @@@
 
@@ -23,6 +23,8 @@ Notes:
   it. (This is, of course, true)
 - Doesn't mean that we can't all up our Git game, and reap some pretty awesome
   benefits.
+- Towards the end of this talk I'll get into some specifics of exactly what
+  this means, specifically.
 
 @@@
 
@@ -39,7 +41,8 @@ Notes:
 - So too with Git. When you're stuck using basic commands and not peeking behind
   the curtains, it's like staying in Insert mode and using the arrow keys.
 - Like with source control, at first you have this idea that the tool is
-  secondary to what you're making with it.
+  secondary to what you're making with it. **But**, if you invest in gaining
+  deep knowledge of the tool, there are many benefits to be had.
 
 @@@
 

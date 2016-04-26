@@ -95,10 +95,19 @@ Notes:
 - Commit to the master branch and push back to the remote.
 - Move back to the first instance and run `git fetch` first, show the difference
   between the local branch and the remote-tracking one, and then use `git merge
-  origin/master` to manually merge it in. 
+  origin/master` to manually merge it in.
 - Talk about `git reset --hard origin/master` and how it differs from `git merge
   origin/master`.
 - Now, do some work on the master branch on both consuming repos, and try to
   push from both, showing that by default, the remote only accepts new refs that
   have the current HEAD as an ancestor (a "fast-forward").
 
+@@@
+
+## Quick summary
+
+<ul>
+  <li class="fragment">Commits, trees, blobs</li>
+  <li class="fragment">Remotes</li>
+  <li class="fragment">Remote-tracking branches</li>
+</ul>

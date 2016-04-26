@@ -6,8 +6,8 @@
 
 <p style="text-align: center;">
 	<ul>
-    <li class="fragment">Porcelain vs. Plumbing</li>
     <li class="fragment">Immutable data structure <small>(More on this later)</small></li>
+    <li class="fragment">Porcelain vs. Plumbing</li>
 	</ul>
 </p>
 
@@ -16,13 +16,15 @@ Notes:
 What does this mean?
 
 - Git isn't just a VCS. It's a content tracker.
-- While most of the commands we use are very VC-oriented, they are simply
-  porcelain commands that are implemented by plumbing ones that interact with
-  the Git file system, or database.
+- What is a "content-addressable file system?"
 - Contrast to location-addressable file system, which has a path/location as an
   address.
 - What happens when you change the data? No longer the same address. **Immutability**.
 - (Git's db is an immutable data structure)
+
+Most of the VC-oriented commands we use are known as **porcelain commands**.
+These are implemented by **plumbing commands** interact with the Git file
+system, or database.
 
 @@@
 
@@ -58,7 +60,7 @@ Notes:
 - Using a system of what's called packfiles, Git bundles up objects in its db
   into a delta-compressed "packfile". (So I sort of lied about the deltas
   thing :P)
- 
+
 @@@
 
 ## _DEMO_
@@ -124,7 +126,7 @@ Notes:
 
 - They not only represent the state of the repository at a place in time (by
   pointing at a root tree object) but because they contain a list of parent
-  commits, they form a directed graph that represents a history.
+  commits, they form a directed, acyclic graph that represents a history.
 
 @@@
 
@@ -144,4 +146,34 @@ Notes:
 
 <p style="color: red;">These objects are all invalidated, and new ones must be
 created.</p>
+
+@@@
+
+## Branches
+
+- Pointer to a commit, and therefore like naming a history
+- Implemented as a file, containing only the address of a commit object
+- `refs/heads/<branch-name>`
+- `HEAD`: a pointer to the "current" branch
+
+Notes:
+
+- Branches are ephemeral in Git. They're cheap, easy to create and delete.
+  Once you merge a branch into another branch, you can safely delete the
+  first. If for some reason you want to go back and continue work, you can
+  always create a new branch that points to just prior to the merge.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

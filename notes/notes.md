@@ -57,6 +57,8 @@ interactive add series of prompts that will allow you to checkout from the
 HEAD|discard parts of your working tree as you see fit.
   ```
 
++ `git stash`. Saves a commit that doesn't have a parent.
+
 + rebase
 
   First and foremost, do not be afraid.
